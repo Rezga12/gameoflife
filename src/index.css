@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap");
+.track {
+  border: 1px solid #4f667a;
+  width: 200px;
+  height: 8px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.51);
+}
+
+.thumb {
+  border: 1px solid #00c8c8;
+  background: #2c3e50;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  top: -7px;
+  transition: box-shadow 0.3s;
+}
+.thumb:hover {
+  box-shadow: 0 0 15px rgba(0, 170, 170, 0.5);
+}
+
+.focus {
+  box-shadow: 0 0 15px rgba(0, 170, 170, 0.5);
+}
+
+.big-focus {
+  box-shadow: 0 0 20px rgba(0, 170, 170, 0.5);
+}
+
+.fill {
+  height: 100%;
+  background: #00c8c8;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 0 15px rgba(0, 170, 170, 0.5);
+}
+
+body {
+  background: #242c2f;
+  display: flex;
+  justify-content: center;
+}
+
+.container-main {
+  border: white 1px solid;
+  display: flex;
+  margin-top: 50px;
+  transition: 0.3s;
+}
+.container-main .interface {
+  width: 320px;
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container-main .interface .checkbox-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+}
+.container-main .interface .checkbox-container .checkbox {
+  appearance: none;
+  border: 1px solid #00c8c8;
+  width: 45px;
+  height: 20px;
+  outline: none;
+  position: relative;
+  box-sizing: content-box;
+  transition: background-color 0.25s;
+}
+.container-main .interface .checkbox-container .checkbox:checked {
+  background: #47d7ce;
+}
+.container-main .interface .checkbox-container .checkbox:after {
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #34b16e;
+  content: "";
+  position: absolute;
+  transition: 0.25s ease-in-out;
+}
+.container-main .interface .checkbox-container .checkbox:checked:after {
+  left: calc(100% - 2px - 16px);
+}
+.container-main .interface .count-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.container-main .interface .slider-container {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-main .interface .label {
+  color: white;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  width: 80px;
+  margin: 5px 10px 5px 10px;
+}
+.container-main .interface .button-container {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.container-main .interface .button-container .disabled-button {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px 5px 10px;
+  border: #484848 2px solid;
+  color: #484848;
+  cursor: default;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+.container-main .interface .button-container .button {
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 5px 10px 5px 10px;
+  flex-grow: 1;
+  color: #ffffff;
+  border: #00c8c8 2px solid;
+  box-shadow: inset 0 0 15px rgba(0, 170, 170, 0.5), 0 0 15px rgba(0, 170, 170, 0.5);
+  transition: 0.3s;
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container-main .interface .button-container .button:hover {
+  box-shadow: inset 0 0 45px #00c8c8, 0 0 10px rgba(2, 2, 2, 0.77);
+}
+.container-main .container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.container-main .container .cell {
+  transition: width 0.3s, height 0.3s;
+  background: #0d0d0d;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+.container-main .container .border-right {
+  border-right: 1px solid #192225;
+}
+.container-main .container .border-bottom {
+  border-bottom: 1px solid #242c2f;
+}
+.container-main .container .selected-color {
+  background: #34b16e;
+}
+.container-main .container .selected-color-early {
+  background: #48f9a0;
+}
+
+/*# sourceMappingURL=index.css.map */

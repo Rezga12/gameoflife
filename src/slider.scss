@@ -1,0 +1,48 @@
+
+.track{
+  border:1px solid #4f667a;
+  width:200px;
+  height: 8px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.51);
+}
+
+.thumb{
+  border: 1px solid #00c8c8;
+  background: #2c3e50;
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  box-sizing: border-box;
+  top:-7px;
+
+  transition: box-shadow .3s;
+
+  &:hover{
+    box-shadow: 0 0 15px rgba(0,170,170,0.5);
+  }
+}
+
+.focus{
+  box-shadow: 0 0 15px rgba(0,170,170,0.5);
+}
+
+.big-focus{
+  box-shadow: 0 0 20px rgba(0,170,170,0.5);
+}
+
+.fill{
+  height:100%;
+  background: #00c8c8;
+  border-radius: 5px 0 0 5px;
+
+  box-shadow: 0 0 15px rgba(0,170,170,0.5);
+
+}
+
